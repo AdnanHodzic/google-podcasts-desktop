@@ -3,8 +3,11 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"log"
 	"net/url"
 	"os"
+	"os/exec"
+	"runtime"
 )
 
 var newBaseUrl = "https://podcasts.google.com/?"
@@ -20,6 +23,24 @@ func parseURL(urlString string) (string, error) {
 
 	result = url.RawQuery
 	return result, err
+}
+
+func openBrowser(linkURL string) {
+	var err error
+
+	switch runtime.GOOS {
+	case "linux":
+		err = exec.Command("xdg-open", linkURL).Start()
+	case "darwin":
+		err = exec.Command("open", linkURL).Start()
+	case "windows":
+		err = exec.Command("rundll32", "url.dll,FileProtocolHandler", linkURL).Start()
+	default:
+		err = fmt.Errorf("unsupported platform")
+	}
+	if err != nil {
+		log.Fatal(err)
+	}
 }
 
 func main() {
@@ -40,4 +61,9 @@ func main() {
 
 	fmt.Println("\nGoogle Podcast web friendly URL:")
 	fmt.Println(newBaseUrl + resultURL)
+
+	fmt.Println("\nOpening link in a default web browser ...")
+	linkURL := newBaseUrl + resultURL
+	openBrowser(linkURL)
+
 }
