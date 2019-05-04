@@ -28,6 +28,11 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 	providedURL, _ := reader.ReadString('\n')
 
+	if providedURL == "\n" {
+		fmt.Println("You must enter a value.")
+		os.Exit(0)
+	}
+
 	resultURL, err := parseURL(providedURL)
 	if err != nil {
 		panic(err)
