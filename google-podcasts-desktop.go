@@ -1,3 +1,10 @@
+/*
+google-podcasts-desktop: Get Google Podcasts web friendly URL's
+Blog post: https://foolcontrol.org/?p=3095
+Copyleft: Adnan Hodzic <adnan@hodzic.org>
+License: GPLv3
+*/
+
 package main
 
 import (
