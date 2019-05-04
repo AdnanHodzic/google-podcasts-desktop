@@ -1,10 +1,6 @@
 # google-podcasts-desktop
 
-# google-podcasts-desktop
-
 google-podcats-desktop app allows you to paste podcast link, after which it'll automatically convert it to desktop (web) friendly URL and open it in your default web browser. 
-
-Supported platforms: Linux, MacOS, Windows.
 
 ### How to run google-podcats-desktop
 
@@ -12,6 +8,8 @@ Supported platforms: Linux, MacOS, Windows.
 * Run google-podcasts-desktop from terminal, i.e: 
 `./google-podcast-desktop-linux`
 * Paste [Google Podcasts URL](https://www.google.com/podcasts?feed=aHR0cDovL2pvZXJvZ2FuZXhwLmpvZXJvZ2FuLmxpYnN5bnByby5jb20vcnNz&episode=N2U0ZTEzZDUyZjE4NDNlYzkxNDhkZDhhZTgzYTI0ODY) (copied from Android app)
+
+![Alt Text](https://foolcontrol.org/wp-content/uploads/2019/05/google-podcasts-desktop-screencast.gif)
 
 Linux/MacOS users should consider moving binary to `/usr/bin` directory for easy access. 
 I.e: `sudo mv google-podcasts-desktop-linux /usr/bin/google-podcasts-desktop`.
