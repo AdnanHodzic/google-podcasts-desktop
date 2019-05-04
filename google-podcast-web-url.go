@@ -45,7 +45,7 @@ func openBrowser(linkURL string) {
 
 func main() {
 
-	fmt.Println("\nEnter Google Podcast URL:")
+	fmt.Println("\nEnter Google Podcasts URL:")
 	reader := bufio.NewReader(os.Stdin)
 	providedURL, _ := reader.ReadString('\n')
 
@@ -59,7 +59,7 @@ func main() {
 		panic(err)
 	}
 
-	fmt.Println("\nGoogle Podcast web friendly URL:")
+	fmt.Println("\nGoogle Podcasts web friendly URL:")
 	fmt.Println(newBaseUrl + resultURL)
 
 	fmt.Println("\nOpening link in a default web browser ...")
