@@ -7,7 +7,7 @@ import (
 	"os"
 )
 
-var newBaseUrl = "https://podcasts.google.com/?feed="
+var newBaseUrl = "https://podcasts.google.com/?"
 
 func parseURL(urlString string, field string) (string, error) {
 
@@ -19,10 +19,6 @@ func parseURL(urlString string, field string) (string, error) {
 	}
 
 	result = url.RawQuery
-	// ToDo:Add check if not starting as proper Google Podcast URL
-	if field != "" && result != "" {
-		result = url.Query().Get(field)
-	}
 	return result, err
 }
 
@@ -36,8 +32,6 @@ func usage() {
 func main() {
 	flag.Usage = usage
 
-	// ugly alternative
-	//fieldPtr := flag.String("url=feed", "", "Google Podcast URL")
 	fieldPtr := flag.String("url", "", "Google Podcast URL")
 
 	flag.Parse()
@@ -48,7 +42,6 @@ func main() {
 	}
 
 	if len(flag.Args()) < 1 {
-		//panic(errors.New("Please proper Google Podcast URL"))
 		fmt.Println("\nError: You need to provide valid Google Podcast URL!")
 		usage()
 	} else {
@@ -57,7 +50,6 @@ func main() {
 		resultURL, err := parseURL(urlString, *fieldPtr)
 		if err != nil {
 			panic(err)
-			//fmt.Println("Don't panic")
 		}
 
 		fmt.Println("\nGoogle Podcast web friendly URL:")
