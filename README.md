@@ -10,7 +10,7 @@ google-podcasts-desktop app allows you to paste podcast link, after which it'll 
 * Paste [Google Podcasts URL](https://www.google.com/podcasts?feed=aHR0cDovL2pvZXJvZ2FuZXhwLmpvZXJvZ2FuLmxpYnN5bnByby5jb20vcnNz&episode=N2U0ZTEzZDUyZjE4NDNlYzkxNDhkZDhhZTgzYTI0ODY) (copied from Android app)
 * Enjoy :)
 
-![Alt Text align="center"](https://foolcontrol.org/wp-content/uploads/2019/05/google-podcast-desktop-screencast-2.gif)
+![Alt Text align="center"](https://foolcontrol.org/wp-content/uploads/2019/05/google-podcast-desktop-screencast-3.gif)
 
 Linux/MacOS users should consider moving binary to `/usr/bin` directory for easy access. 
 I.e: `sudo mv google-podcasts-desktop-linux /usr/bin/google-podcasts-desktop`.
