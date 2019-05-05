@@ -4,7 +4,7 @@ google-podcasts-desktop app allows you to paste podcast link, after which it'll 
 
 ### How to run google-podcasts-desktop
 
-* Download binary for your OS from [releases page](https://github.com/AdnanHodzic/google-podcasts-web-url/releases). Supported platforms are: [Linux](https://github.com/AdnanHodzic/google-podcasts-desktop/releases/download/0.1/google-podcasts-desktop-linux), [MacOS](https://github.com/AdnanHodzic/google-podcasts-desktop/releases/download/0.1/google-podcasts-desktop-macos), [Windows](https://github.com/AdnanHodzic/google-podcasts-desktop/releases/download/0.1/google-podcasts-desktop.exe).
+* Download binary for your OS from [releases page](https://github.com/AdnanHodzic/google-podcasts-web-url/releases). Supported platforms are: [Linux](https://github.com/AdnanHodzic/google-podcasts-desktop/releases/download/0.2/google-podcasts-desktop-linux), [MacOS](https://github.com/AdnanHodzic/google-podcasts-desktop/releases/download/0.2/google-podcasts-desktop-macos), [Windows](https://github.com/AdnanHodzic/google-podcasts-desktop/releases/download/0.2/google-podcasts-desktop.exe).
 * Run google-podcasts-desktop from terminal, i.e: 
 `./google-podcast-desktop-linux`
 * Paste [Google Podcasts URL](https://www.google.com/podcasts?feed=aHR0cDovL2pvZXJvZ2FuZXhwLmpvZXJvZ2FuLmxpYnN5bnByby5jb20vcnNz&episode=N2U0ZTEzZDUyZjE4NDNlYzkxNDhkZDhhZTgzYTI0ODY) (copied from Android app)
