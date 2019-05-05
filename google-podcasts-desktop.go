@@ -8,7 +8,6 @@ License: GPLv3
 package main
 
 import (
-	"bufio"
 	"fmt"
 	"log"
 	"net/url"
@@ -53,11 +52,11 @@ func openBrowser(linkURL string) {
 func main() {
 
 	fmt.Println("\nEnter Google Podcasts URL:")
-	reader := bufio.NewReader(os.Stdin)
-	providedURL, _ := reader.ReadString('\n')
+	var providedURL string
+	fmt.Scanln(&providedURL)
 
-	if providedURL == "\n" {
-		fmt.Println("You must enter a value.")
+	if providedURL == "" {
+		fmt.Println("\nYou must enter a value")
 		os.Exit(0)
 	}
 
@@ -72,5 +71,4 @@ func main() {
 	fmt.Println("\nOpening link in a default web browser ...")
 	linkURL := newBaseUrl + resultURL
 	openBrowser(linkURL)
-
 }
