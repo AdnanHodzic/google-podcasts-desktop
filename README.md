@@ -1,5 +1,7 @@
 # google-podcasts-desktop
 
+***Please note:** in meantime [Google has rolled out changes to their backend which make this tool redundant](https://github.com/AdnanHodzic/google-podcasts-desktop/issues/1). Now, Google Podcasts URL’s shared via its Android App are automatically redirected to their web counterpart when run on desktop.*
+
 google-podcasts-desktop app allows you to paste podcast link, after which it'll automatically convert it to desktop (web) friendly URL and open it in your default web browser. 
 
 ### How to run google-podcasts-desktop
